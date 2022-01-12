@@ -1,0 +1,18 @@
+Instrucciones servidor_tienda:
+- erl -sname servidor
+- c(servidor_tienda).
+- Para abrir tienda usamos: servidor_tienda:abre_tienda().
+- Para cerrarla usamos: servidor_tienda:cierra_tienda().
+- Para registrar un producto usamos: servidor_tienda:registra_producto(Producto, Cantidad)
+- Para modificar un producto usamos: servidor_tienda:modifica_producto(Producto).
+- Para eliminar un producto usamos: servidor_tienda:elimina_producto(Producto).
+- Para checar la lista de socios usamos: servidor_tienda:lista_socios(). 
+- Para checar cuanto se ha vendido usamos: servidor_tienda:productos_vendidos(). 
+
+Instrucciones socios_tienda:
+- erl -sname cliente
+- c(socios_tienda).
+- Para suscribir un socio usamos: socios_tienda:suscribir_socio(Socio).
+- Para eliminar a un socio usamos: socios_tienda:elimina_socio(Socio).
+- Para checar la lista de existencias usamos: socios_tienda:lista_existencias().
+- Para crear un pedido usamos: socios_tienda:crea_pedido(Socio, TuplaDeProductoYCantidad).
